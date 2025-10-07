@@ -1,0 +1,543 @@
+.flight-tab.round-trip {
+    background: #fff;
+    color: #ff6848;
+    font-weight: 700;
+    z-index: 2;
+    box-shadow: 0 4px 24px #ffb34722;
+}
+.flight-tab.round-trip:hover {
+    background: #fff;
+    color: #ff6848;
+}
+     body {
+            margin: 0;
+            padding: 0;
+            background: #fff;
+        }
+        .header-bg {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100vw;
+            height: 480px;
+            z-index: 0;
+            overflow: hidden;
+        }
+        .header-bg img {
+            width: 100vw;
+            height: 480px;
+            object-fit: cover;
+            display: block;
+        }
+        .header {
+            width: 100vw;
+            height: 86px;
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 48px;
+            box-sizing: border-box;
+            font-family: 'Manrope', Arial, sans-serif;
+            position: relative;
+            z-index: 2;
+        }
+        .header-left {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .logo-img {
+            width: 40px;
+            height: 40px;
+        }
+        .logo-text {
+            font-size: 1.45rem;
+            font-weight: 700;
+            color: #232233;
+            letter-spacing: -1px;
+            position: relative;
+        }
+        .tm-case1 {
+            font-size: 7px;
+            vertical-align: super;
+            margin-left: 2px;
+            color: #232233;
+            font-weight: 400;
+        }
+        .header-nav {
+            display: flex;
+            align-items: center;
+            gap: 38px;
+        }
+        .header-nav a {
+            color: #232233;
+            text-decoration: none;
+            font-size: 1rem;
+            font-weight: 500;
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+        .header-nav .nav-arrow {
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+        }
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 18px;
+        }
+        .currency-block {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            border-radius: 8px;
+            padding: 4px 14px 4px 8px;
+            gap: 7px;
+            font-size: 1rem;
+            font-weight: 600;
+            box-shadow: 0 2px 8px #ffb34722;
+        }
+        .currency-flag {
+            width: 18px;
+            height: 12px;
+            border-radius: 2px;
+        }
+        .currency-text {
+            color: #232233;
+            font-size: 1rem;
+            font-weight: 500;
+        }
+        .currency-arrow {
+            width: 14px;
+            height: 14px;
+            vertical-align: middle;
+            margin-left: 2px;
+        }
+        .header-buttons {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-left: 10px;
+        }
+        .login-btn {
+            background: #fff;
+            color: #ff4848;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 8px 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px #ffb34722;
+            transition: background 0.2s, color 0.2s;
+        }
+        .signup-btn {
+            background: #ff6848;
+            color: #fff;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 8px 24px;
+            cursor: pointer;
+            box-shadow: 0 2px 8px #ffb34722;
+            transition: background 0.2s, color 0.2s;
+        }
+        .login-btn:hover {
+            background: #ff4848;
+            color: #fff;
+        }
+        .signup-btn:hover {
+            background: #e13b3b;
+        }
+
+        /* --- Banner Text --- */
+        .main-banner-container {
+            position: relative;
+            width: 100vw;
+            height: 480px;
+            z-index: 3;
+        }
+        .main-banner-text-block {
+            position: relative;
+            top: 149px;
+            left: 64px;
+            width: 672px;
+            height: 144px;
+            opacity: 1;
+            background: none;
+            z-index: 4;
+        }
+        .main-banner-title {
+            font-family: 'Manrope', Arial, sans-serif;
+            font-weight: 700;
+            font-style: normal;
+            font-size: 64px;
+            line-height: 72px;
+            letter-spacing: -0.02em;
+            color: #1F2937;
+            margin: 0;
+            top: -100px;
+            position: relative;
+            vertical-align: middle;
+            z-index: 2;
+        }
+        .main-banner-underline {
+            position: relative;
+            left: 220px;
+            top: -130px;
+            width: 420px;
+            height: 25px;
+            pointer-events: none;
+            z-index: 1
+        }
+        .main-banner-underline img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            display: block;
+        }
+        .main-banner-side-text-block {
+            position: relative;
+            top: 160px;
+            left: 100px;
+            width: 528px;
+            height: 84px;
+            opacity: 1;
+            background: none;
+            z-index: 4;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .main-banner-side-text {
+            font-family: 'Manrope', Arial, sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            font-size: 18px;
+            line-height: 28px;
+            letter-spacing: 0;
+            top: -240px;
+            left: 1150px;
+            color: #1F2937;
+            vertical-align: middle;
+            background: none;
+            position: relative;
+        }
+        .main-banner-rating {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 2px;
+        }
+        .main-banner-avatars {
+            height: 32px;
+            top: -230px;
+            left: 1150px;
+            position: relative;
+        }
+        .main-banner-rating-text {
+            font-family: 'Manrope', Arial, sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            left: 1150px;
+            top: -230px;
+            position: relative;
+            color: #1F2937;
+        }
+        .main-banner-rating-text .star {
+            color: #ffb347;
+            font-size: 1.1em;
+            font-weight: 900;
+            margin-right: 4px;
+        }
+        .main-banner-rating-text .rating-desc {
+            font-weight: 400;
+            color: #1F2937;
+            font-size: 16px;
+            margin-left: 4px;
+        }
+
+        /* --- Flights Search Block --- */
+        .flights-block {
+            position: relative;
+           /* width: 900px; */
+            left: 200px;
+            /* margin: -60px auto 0 auto; */
+            background: transparent;
+            z-index: 5;
+        }
+            .flights-block .flights-search-form {
+                right: 200px;
+            }
+        .flights-tabs {
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+            gap: 0;
+            margin-bottom: -8px;
+        }
+        /* Новый современный блок табов */
+        .flight-tabs {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0;
+  margin-bottom: 24px;
+  position: relative;
+  background: transparent;
+}
+
+.flight-tab {
+    position: relative;
+    background: #ff6848;
+    color: #fff;
+    border: none;
+    border-radius: 32px 32px 0 0 / 60px 60px 0 0;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 16px 48px 18px 48px;
+    cursor: pointer;
+    margin: 0 -8px;
+    z-index: 1;
+    box-shadow: 0 2px 8px #ffb34722;
+    transition: background 0.2s, color 0.2s;
+    font-family: 'Manrope', Arial, sans-serif;
+    line-height: 1;
+}
+
+.flight-tab.active {
+    background: #ff6848;
+    color: #fff;
+    z-index: 2;
+    box-shadow: 0 4px 24px #ffb34722;
+}
+
+.flight-tab:hover {
+    background: #ff8c5a;
+    color: #fff;
+}
+
+.flight-tab:first-child {
+  margin-left: 0;
+}
+
+.flight-tab:last-child {
+  margin-right: 0;
+}
+        .flights-search-form {
+            display: flex;
+            justify-content: center;
+            /* isplay: flex;
+            left: 200px;
+            gap: 18px;
+            background: #ffffff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px #ffb34722;
+            padding: 18px 24px;
+            margin-bottom: 18px;
+            margin-top: 0;
+            flex-wrap: wrap; */
+            z-index: 1;
+        }
+        .search-field {
+            display: flex;
+            flex-direction: column;
+            gap: 4px;
+            min-width: 140px;
+            }
+        .search-label {
+            font-size: 0.75rem;
+            position: relative;
+            color: #ff6848;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 2px;
+            font-family: 'Manrope', Arial, sans-serif;
+        }
+        .search-value {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #232233;
+        }
+        .search-code {
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: #232233;
+            background: #f3f3f3;
+            border-radius: 8px;
+            padding: 2px 8px;
+        }
+        .search-city {
+            font-weight: 700;
+            color: #232233;
+        }
+        .search-sub {
+            font-size: 0.85rem;
+            color: #b0b0b0;
+            margin-left: 4px;
+        }
+        .search-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 8px;
+        }
+        .search-arrow img {
+            width: 24px;
+            height: 24px;
+        }
+        .search-date {
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: #232233;
+            background: #f3f3f3;
+            border-radius: 8px;
+            padding: 2px 8px;
+        }
+        .search-day {
+            font-weight: 700;
+            color: #232233;
+        }
+        .search-traveler {
+            font-size: 1.1rem;
+            font-weight: 900;
+            color: #232233;
+            background: #f3f3f3;
+            border-radius: 8px;
+            padding: 2px 8px;
+        }
+        .search-class {
+            font-weight: 700;
+            color: #232233;
+        }
+        .search-btn {
+            background: #ff6848;
+            color: #fff;
+            border: none;
+            border-radius: 24px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            padding: 12px 32px;
+            cursor: pointer;
+            box-shadow: 0 4px 24px #ff68481a;
+            margin-left: 12px;
+            transition: background 0.2s;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-family: 'Manrope', Arial, sans-serif;
+            position: relative;
+            right: 630px;
+            top: 60px;
+        }
+        .search-btn:hover {
+            background: #e13b3b;
+        }
+        .search-icon {
+            width: 22px;
+            height: 22px;
+        }
+
+        /* --- Tours Block --- */
+        .tours-block {
+            max-width: 1100px;
+            margin: 64px auto 0 auto;
+            padding: 0 24px;
+            text-align: center;
+        }
+        .tours-title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #232233;
+            margin-bottom: 12px;
+            font-family: 'Manrope', Arial, sans-serif;
+        }
+        .tours-desc {
+            color: #b0b0b0;
+            font-size: 1.08rem;
+            margin-bottom: 32px;
+            font-family: 'Manrope', Arial, sans-serif;
+        }
+        .tours-list {
+            display: flex;
+            justify-content: center;
+            gap: 24px;
+            flex-wrap: wrap;
+        }
+        .tour-item {
+            background: #fff;
+            border-radius: 18px;
+            box-shadow: 0 4px 24px #ffb34722;
+            padding: 28px 38px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #232233;
+            cursor: pointer;
+            transition: box-shadow 0.2s, border 0.2s;
+            border: 2px solid transparent;
+            font-family: 'Manrope', Arial, sans-serif;
+        }
+        .tour-item.active, .tour-item:hover {
+            border: 2px solid #ff6848;
+            box-shadow: 0 8px 32px #ff68481a;
+            color: #ff6848;
+        }
+        .tour-item img {
+            width: 38px;
+            height: 38px;
+        }
+
+        @media (max-width: 1100px) {
+            .header, .main-banner-container, .flights-block, .tours-block {
+                max-width: 98vw;
+            }
+            .main-banner-side-text-block {
+                left: 16px;
+                top: 320px;
+                width: 90vw;
+            }
+            .flights-block {
+                width: 98vw;
+            }
+        }
+        @media (max-width: 900px) {
+            .main-banner-text-block {
+                left: 16px;
+                top: 80px;
+                width: 95vw;
+                height: auto;
+            }
+            .main-banner-title {
+                font-size: 2.2rem;
+                line-height: 2.5rem;
+            }
+            .main-banner-underline {
+                width: 60vw;
+                top: 90px;
+            }
+            .main-banner-side-text-block {
+                left: 16px;
+                top: 320px;
+                width: 90vw;
+            }
+            .flights-block {
+                width: 98vw;
+            }
+            .tours-list {
+                flex-direction: column;
+                gap: 12px;
+                align-items: center;
+            }
+        }
